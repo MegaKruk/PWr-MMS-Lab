@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="tab_text_1">BMI</string>
+    <string name="tab_text_2">Options</string>
+</resources>
