@@ -6,54 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/inputMassKG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="35dp" />
-
-    <EditText
-        android:id="@+id/inputHeightCM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="157dp" />
-
-    <Button
-        android:id="@+id/countButton"
-        android:layout_width="401dp"
-        android:layout_height="46dp"
-        android:text="Count"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="241dp" />
-
     <TextView
         android:id="@+id/massKG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mass[kg]"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mass_kg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputMassKG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massKG"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/heightCM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Height [cm]"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="89dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/height_cm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputMassKG" />
+
+    <EditText
+        android:id="@+id/inputHeightCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightCM"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/buttonCount"
+        android:layout_width="395dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputHeightCM" />
 
     <TextView
         android:id="@+id/outputBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OUTPUT_BMI"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="472dp" />
-
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="80dp"
+        android:text="outputBMI will be here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCount" />
 </androidx.constraintlayout.widget.ConstraintLayout>

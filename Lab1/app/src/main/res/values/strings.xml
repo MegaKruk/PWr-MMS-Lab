@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lab 1</string>
+    <string name="textview">TextView</string>
+    <string name="mass_kg">Mass [kg]</string>
+    <string name="height_cm">Height [cm]</string>
+    <string name="count">Count</string>
 </resources>
