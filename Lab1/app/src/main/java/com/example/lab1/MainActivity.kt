@@ -3,6 +3,7 @@ package com.example.lab1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import java.math.BigDecimal
 import java.math.RoundingMode
@@ -24,11 +25,17 @@ override fun onCreate(savedInstanceState: Bundle?) {
             val height = heightCM.text.toString().toDouble()/100
             val bmi = calculateBMI(mass, height)
             outputBMI.text = bmi.toString()
+        } else
+        {
+
         }
-    }
 }
+}
+
+
 
     private fun calculateBMI(weight: Double, height: Double) = BigDecimal(weight / (height * height))
         .setScale(2, RoundingMode.HALF_EVEN).toDouble()
 }
+
 
