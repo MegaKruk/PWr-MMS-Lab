@@ -5,4 +5,6 @@
     <string name="count">Count</string>
     <string name="chonk">chonk</string>
     <string name="bmi_value">BMI value</string>
+    <string name="input_your_mass">Input your mass</string>
+    <string name="input_your_height">Input your height</string>
 </resources>

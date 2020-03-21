@@ -1,12 +1,8 @@
 package com.example.lab1
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
-import java.math.BigDecimal
-import java.math.RoundingMode
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,10 +17,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
     buttonCount.setOnClickListener{
         if (heightCM.text.isNotEmpty() && massKG.text.isNotEmpty())
         {
-            val mass = massKG.text.toString().toDouble()
-            val height = heightCM.text.toString().toDouble()/100
-            val bmi = calculateBMI(mass, height)
-            outputBMI.text = bmi.toString()
+            val mass = massKG.text.toString()
+            val height = heightCM.text.toString()
+            val bmiResult = calculateBMI(mass, height)
+            outputBMI.text = bmiResult.toString()
         } else
         {
 
@@ -34,8 +30,20 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 
 
-    private fun calculateBMI(weight: Double, height: Double) = BigDecimal(weight / (height * height))
-        .setScale(2, RoundingMode.HALF_EVEN).toDouble()
+//    private fun calculateBMI(weight: Double, height: Double) = BigDecimal(weight / (height * height))
+//        .setScale(2, RoundingMode.HALF_EVEN).toDouble()
+//}
+
+    private fun calculateBMI(height: String, weight: String): Double
+    {
+        val heightDouble = height.toDouble() / 100
+        val weightDouble = weight.toDouble()
+        //val bmiResult = String.format("%.2f", bmi)
+        return weightDouble / (heightDouble * heightDouble)
+        //val intent = Intent(this, ResultActivity::class.java)
+        //intent.putExtra("Calculate results here", bmiResult)
+        //startActivity(intent)
+    }
 }
 
 
