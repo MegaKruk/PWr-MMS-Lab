@@ -7,4 +7,5 @@
     <string name="bmi_value">BMI value</string>
     <string name="input_your_mass">Input your mass</string>
     <string name="input_your_height">Input your height</string>
+    <string name="what_should_you_do">What should you do?</string>
 </resources>
