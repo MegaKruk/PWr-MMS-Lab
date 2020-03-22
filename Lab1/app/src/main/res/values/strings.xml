@@ -17,4 +17,8 @@
     <string name="go_back">Go back</string>
     <string name="mike">mike</string>
     <string name="imperial">Imperial</string>
+    <string name="mass_pounds">Mass [pounds]</string>
+    <string name="height_feet">Height [feet]</string>
+    <string name="height_inches">Height [inches]</string>
+    <string name="metric">Metric</string>
 </resources>
