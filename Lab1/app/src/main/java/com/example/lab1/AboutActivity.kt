@@ -11,8 +11,8 @@ class AboutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
 
-        val aboutEvent = findViewById<Button>(R.id.buttonAbout)
-        aboutEvent.setOnClickListener{
+        val backEvent = findViewById<Button>(R.id.buttonBack)
+        backEvent.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

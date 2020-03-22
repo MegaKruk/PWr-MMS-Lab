@@ -26,6 +26,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val imperialEvent = findViewById<Button>(R.id.buttonImperial)
+        imperialEvent.setOnClickListener{
+            val intent = Intent(this, ImperialActivity::class.java)
+            startActivity(intent)
+        }
+
         val buttonEvent = findViewById<Button>(R.id.buttonCount)
         buttonEvent.setOnClickListener{
             val kg = inputMass.text.toString().toDouble()
