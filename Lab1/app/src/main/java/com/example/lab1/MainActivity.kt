@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.math.pow
 import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             }
             else
             {
-                var bmi: Double = kg / Math.pow(cm / 100.0, 2.0)
+                var bmi: Double = kg / (cm / 100.0).pow(2.0)
                 bmi = (bmi * 100.0).roundToInt() / 100.0;
                 resultView.text = bmi.toString()
 
