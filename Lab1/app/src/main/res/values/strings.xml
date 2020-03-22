@@ -3,9 +3,15 @@
     <string name="mass_kg">Mass [kg]</string>
     <string name="height_cm">Height [cm]</string>
     <string name="count">Count</string>
-    <string name="chonk">chonk</string>
     <string name="bmi_value">BMI value</string>
     <string name="input_your_mass">Input your mass</string>
     <string name="input_your_height">Input your height</string>
     <string name="what_should_you_do">What should you do?</string>
+    <string name="about">About</string>
+    <string name="options">Options</string>
+    <string name="megakruk">MegaKruk</string>
+    <string name="i_value_privacy_so_no_real_data_on_public_repos">I value privacy, so no real data on public repos.</string>
+    <string name="i_am_a_tinkerer_i_play_with_stuff_and_see_what_the_outcome_is">I am a tinkerer. I play with stuff and see what the outcome is.</string>
+    <string name="but_mainly_memes_lots_of_memes">But mainly memes. Lots of memes... And beer...</string>
+    <string name="i_deal_with_c_c_linux_vhdl_fpga_s_and_cryptanalysis">I deal with C/C++, Linux, VHDL, FPGA\'s and cryptanalysis.</string>
 </resources>
