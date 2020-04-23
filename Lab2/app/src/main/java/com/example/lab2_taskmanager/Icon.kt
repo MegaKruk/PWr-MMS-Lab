@@ -4,6 +4,6 @@ enum class Icon(val id : Int)
 {
     todo(R.drawable.todo),
     email(R.drawable.email),
-    meeting(R.drawable.meeting),
-    phone(R.drawable.phone)
+    phone(R.drawable.phone),
+    meeting(R.drawable.meeting)
 }
