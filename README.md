@@ -7,4 +7,4 @@ Lab 1 gif:
 
 Lab 2 gif:
 
-
+![](lab2.gif)
