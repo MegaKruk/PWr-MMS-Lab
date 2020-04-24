@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity()
 
         val confirmTaskEvent: Button = popupView.findViewById(R.id.buttonConfirm)
         confirmTaskEvent.setOnClickListener {
+            printToast("Got here!")
             if(checkAddTask(popupView, radioGroup))
             {
                 printToast("Task added successfully")
@@ -118,7 +119,12 @@ class MainActivity : AppCompatActivity()
             printToast("Description field is empty")
             return false
         }
-        type = Icon.valueOf(popupView.findViewById<RadioButton>(radioGroup.getCheckedRadioButtonId()).text.toString().toUpperCase())
+        type = Icon.valueOf(popupView.findViewById<RadioButton>(radioGroup.checkedRadioButtonId).text.toString().toUpperCase())
+        if(type == null)
+        {
+            printToast("No type was chosen!")
+            return false
+        }
         val popupDate: TextView = popupView.findViewById(R.id.taskDate)
         if(popupDate.text !== null && popupDate.text.isNotEmpty())
         {
