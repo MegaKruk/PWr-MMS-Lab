@@ -1,7 +1,8 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.lab2_taskmanager
 
 import android.content.Context
-import android.graphics.Color
 import android.view.*
 import android.widget.ImageView
 import android.widget.PopupWindow
@@ -64,6 +65,15 @@ class SwipeListener(
         {
             return true
         }
+
+        override  fun onSingleTapUp(e: MotionEvent?): Boolean
+        {
+            if (e != null)
+            {
+                displayPopup(adapter.vals[getPosition(e.rawX, e.rawY)])
+            }
+            return true
+        }
     }
 
     fun getPosition(posX: Float, posY:Float): Int
@@ -90,6 +100,32 @@ class SwipeListener(
     {
         adapter.vals.removeAt(getPosition(motion.rawX, motion.rawY))
         adapter.notifyDataSetChanged()
+    }
+
+    private fun displayPopup(task: Task)
+    {
+        val popupView = inflater.inflate(R.layout.details, recycler, false)
+        val displayMetrics = context?.resources?.displayMetrics
+        val popupWindow = PopupWindow(popupView,
+            displayMetrics?.widthPixels?.times(0.8)?.toInt()!!,
+            displayMetrics?.heightPixels?.times(0.8)?.toInt()!!, true)
+        val popupTitle: TextView = popupView.findViewById(R.id.detailsTitle)
+        val popupDueDate: TextView = popupView.findViewById(R.id.detailsDate)
+        val popupType: ImageView = popupView.findViewById(R.id.detailsType)
+        val popupDescription: TextView = popupView.findViewById(R.id.detailsDescription)
+        val popupStatus: TextView = popupView.findViewById(R.id.detailsStatus)
+
+        popupTitle.text = task.title
+        popupDueDate.text = adapter.formSDF.format(task.date.time)
+        popupType.setImageDrawable(adapter.res.getDrawable(task.type.id))
+        popupDescription.text = task.description
+        popupStatus.text = task.status
+
+        popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0)
+        popupView.setOnTouchListener { _, _ ->
+            popupWindow.dismiss()
+            true
+        }
     }
 
     init
