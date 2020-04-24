@@ -30,6 +30,7 @@ class Adapter(
         val adapter = this
         fun <T : RecyclerView.ViewHolder> T.listen(event: (position: Int) -> Unit): T
         {
+            itemView.setOnTouchListener(SwipeListener(mainActivity, adapter, recyclerView, context, view, inflater))
             return this
         }
         return ViewHolder(itemView).listen { pos ->
