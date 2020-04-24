@@ -15,7 +15,7 @@
         android:layout_marginTop="100dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Title"
+        android:hint="@string/title"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Due date (DD-MM-YYYY)"
+        android:hint="@string/due_date_dd_mm_yyyy"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskTitle" />
@@ -48,28 +48,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="TODO" />
+            android:text="@string/todo" />
 
         <RadioButton
             android:id="@+id/typeEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Email" />
+            android:text="@string/email" />
 
         <RadioButton
             android:id="@+id/typePhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Phone" />
+            android:text="@string/phone" />
 
         <RadioButton
             android:id="@+id/typeMeeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Meeting" />
+            android:text="@string/meeting" />
     </RadioGroup>
 
     <EditText
@@ -79,10 +79,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Description"
+        android:hint="@string/description"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskType" />
+        app:layout_constraintTop_toBottomOf="@+id/taskType"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonConfirm"
@@ -90,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="Confirm"
+        android:text="@string/confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskDescription" />
 
@@ -100,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Cancel"
+        android:text="@string/cancel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
