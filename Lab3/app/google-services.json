@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "639107668156",
+    "firebase_url": "https://lab-3-machine-learning-kit.firebaseio.com",
+    "project_id": "lab-3-machine-learning-kit",
+    "storage_bucket": "lab-3-machine-learning-kit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639107668156:android:56865e654354f9690b98b9",
+        "android_client_info": {
+          "package_name": "com.example.lab3machinelearningkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639107668156-vedcujsvmh2faeh75lqb309q8ss77ud7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnoibH7A5pz6OfBz5UN2_lbV_1vmGkKc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639107668156-vedcujsvmh2faeh75lqb309q8ss77ud7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
