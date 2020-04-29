@@ -3,4 +3,7 @@
     <string name="preview">preview</string>
     <string name="label">Label</string>
     <string name="select_image">Select Image</string>
+    <string name="switch_to_text_recognition">Switch to text recognition</string>
+    <string name="switch_to_image_labeling">Switch to image labeling</string>
+    <string name="switch_to_image_recognition">Switch to image recognition</string>
 </resources>

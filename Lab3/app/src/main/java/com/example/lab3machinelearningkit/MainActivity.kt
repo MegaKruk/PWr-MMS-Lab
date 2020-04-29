@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity()
         button.setOnClickListener {
             pickImage()
         }
+
+        val button2 = findViewById<Button>(R.id.buttonSwitchText)
+        button2.setOnClickListener{
+            val intent = Intent(this, TextRecActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int,
