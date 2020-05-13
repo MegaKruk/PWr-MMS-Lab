@@ -33,5 +33,11 @@ class MainActivity : AppCompatActivity()
             val intent = Intent(this, BallGame::class.java)
             startActivity(intent)
         }
+
+        val gpsEvent = findViewById<Button>(R.id.button_gps)
+        gpsEvent.setOnClickListener{
+            val intent = Intent(this, GPS::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab 4 - Sensors</string>
+    <string name="go_back">Go Back</string>
 </resources>
