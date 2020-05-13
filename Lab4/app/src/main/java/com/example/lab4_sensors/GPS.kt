@@ -128,21 +128,21 @@ class GPS : AppCompatActivity()
                 {
                     for (location in locationResult.locations)
                     {
-                        val wayLatitude = location.latitude
-                        val wayLongitude = location.longitude
-                        currentLocation?.text = (String.format(Locale.US, "%s, %s", wayLatitude, wayLongitude))
+                        val setLat = location.latitude
+                        val setLong = location.longitude
+                        currentLocation?.text = (String.format(Locale.US, "%s, %s", setLat, setLong))
                         if (homeLocation?.text?.isEmpty()!!)
                         {
-                            homeLocation?.text = (String.format(Locale.US, "%s, %s", wayLatitude, wayLongitude))
+                            homeLocation?.text = (String.format(Locale.US, "%s, %s", setLat, setLong))
                             homeLocation?.visibility = View.VISIBLE
-                            homeLongitude = wayLongitude
-                            homeLatitude = wayLatitude
+                            homeLongitude = setLong
+                            homeLatitude = setLat
                         }
-                        if(kotlin.math.abs(wayLatitude - homeLatitude) > 1 || kotlin.math.abs(wayLongitude - homeLongitude) > 1)
+                        if(kotlin.math.abs(setLat - homeLatitude) > 1 || kotlin.math.abs(setLong - homeLongitude) > 1)
                         {
                             creepyPastaMammaMia?.visibility = View.VISIBLE
                         }
-                        if(creepyPastaMammaMia?.visibility == View.VISIBLE && kotlin.math.abs(wayLatitude - homeLatitude) < 1 || kotlin.math.abs(wayLongitude - homeLongitude) < 1)
+                        if(creepyPastaMammaMia?.visibility == View.VISIBLE && kotlin.math.abs(setLat - homeLatitude) < 1 || kotlin.math.abs(setLong - homeLongitude) < 1)
                         {
                             creepyPastaMammaMia?.visibility = View.INVISIBLE
                         }
