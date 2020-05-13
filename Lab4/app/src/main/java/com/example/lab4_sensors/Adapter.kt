@@ -1,6 +1,5 @@
 package com.example.lab4_sensors
 
-import android.annotation.SuppressLint
 import android.hardware.Sensor
 import android.view.LayoutInflater
 import android.view.View
@@ -20,7 +19,6 @@ class Adapter(var values: MutableList<Sensor>): RecyclerView.Adapter<Adapter.Vie
         }
     }
 
-    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int)
     {
         holder.titleView?.text = values[position].name + " " + values[position].stringType

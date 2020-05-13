@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Lab 4 - Sensors</string>
     <string name="go_back">Go Back</string>
+    <string name="reset">Reset</string>
+    <string name="time">Time</string>
+    <string name="ball">ball</string>
+    <string name="home_location">Home location:</string>
+    <string name="current_location">Current location:</string>
+    <string name="home">Home</string>
+    <string name="current">Current</string>
+    <string name="creepy_pasta_mamma_mia">STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM</string>
+    <string name="item">Item</string>
+    <string name="list_of_sensors">List of sensors:</string>
+    <string name="play_game">Play Game</string>
+    <string name="gps">GPS</string>
 </resources>

@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Home location: "
+        android:text="@string/home_location"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Current location: "
+        android:text="@string/current_location"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_text1" />
 
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Home"
+        android:text="@string/home"
         app:layout_constraintStart_toStartOf="@+id/textView_current"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Current"
+        android:text="@string/current"
         app:layout_constraintStart_toEndOf="@+id/textView_text2"
         app:layout_constraintTop_toBottomOf="@+id/textView_home" />
 
@@ -62,7 +62,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="16dp"
-        android:text="STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM STAY AT HOME REDRUM "
+        android:text="@string/creepy_pasta_mamma_mia"
         android:textColor="#AC0000"
         android:textSize="18sp"
         android:visibility="invisible"
