@@ -13,6 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Total confirmed:"
+        android:textColor="#F44336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,6 +24,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="0"
+        android:textColor="#F44336"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -34,6 +36,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Recovered:"
+        android:textColor="#4CAF50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_confirmed" />
 
@@ -44,6 +47,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="0"
+        android:textColor="#4CAF50"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -55,6 +59,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Deaths:"
+        android:textColor="#6A6A6A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_recovered" />
 
@@ -65,6 +70,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="0"
+        android:textColor="#6A6A6A"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
