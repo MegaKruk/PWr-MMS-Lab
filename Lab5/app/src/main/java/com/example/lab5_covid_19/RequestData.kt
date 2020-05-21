@@ -88,7 +88,7 @@ class RequestData (var context: Context)
                     override fun getHeaders(): Map<String, String>
                     {
                         val params = HashMap<String, String>()
-                        params["x-rapidapi-key"] = "27360753c9msh5cdd31c0947bf32p1da4c0jsn49afc2fd5d68"
+                        params["x-rapidapi-key"] = "4dc94cc86emsh07c9df420d87631p1b2859jsn6cce84ef2faa"
                         return params
                     }
                 }
