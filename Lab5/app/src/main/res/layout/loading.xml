@@ -29,7 +29,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
-        android:text="Getting data from API"
+        android:text="@string/getting_data_from_api"
         android:textColor="@color/colorAccent"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

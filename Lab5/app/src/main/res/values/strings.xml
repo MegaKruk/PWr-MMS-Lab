@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Lab 5 - COVID-19</string>
+    <string name="back">Back</string>
+    <string name="country">Country</string>
+    <string name="updated_on">Updated on</string>
+    <string name="_0">0</string>
+    <string name="deaths">Deaths:</string>
+    <string name="recovered">Recovered:</string>
+    <string name="total_confirmed">Total confirmed:</string>
+    <string name="cheems_got_virums">cheems got virums</string>
+    <string name="covid_19_info_search">COVID-19 Info Search</string>
+    <string name="search">Search</string>
+    <string name="getting_data_from_api">Getting data from API</string>
 
     <string-array name="countries">
         <item>Afghanistan</item>
@@ -10,7 +21,7 @@
         <item>Antigua and Barbuda</item>
         <item>Argentina</item>
         <item>Armenia</item>
-        <item>Austraila</item>
+        <item>Australia</item>
         <item>Austria</item>
         <item>Azerbaijan</item>
         <item>Bahamas</item>
