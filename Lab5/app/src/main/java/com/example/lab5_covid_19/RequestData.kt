@@ -81,9 +81,9 @@ class RequestData (var context: Context)
                         Log.d("requestData", "Empty")
                     }
                 },
-                Response.ErrorListener {
-                    Log.d("requestData", "Error")
-                    Log.d("requestData", it.toString())}) {
+                    Response.ErrorListener {
+                        Log.d("requestData", "Error")
+                        Log.d("requestData", it.toString())}) {
                     @Throws(AuthFailureError::class)
                     override fun getHeaders(): Map<String, String>
                     {

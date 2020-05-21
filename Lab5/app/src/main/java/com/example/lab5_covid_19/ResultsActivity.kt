@@ -31,7 +31,8 @@ class ResultsActivity : AppCompatActivity()
 
     private fun setVals()
     {
-        updateString = intent.getStringExtra("lastUpdate")
+        val updateText = "Last updated on: "
+        updateString = updateText + intent.getStringExtra("lastUpdate").take(10)
         countryString = intent.getStringExtra("country")
         totalString = intent.getStringExtra("active")
         recoveredString = intent.getStringExtra("recovered")
