@@ -16,3 +16,7 @@ Lab 3 gif:
 Lab 4 gif:
 
 ![](lab4.gif)
+
+Lab 5 gif:
+
+![](lab5.gif)
